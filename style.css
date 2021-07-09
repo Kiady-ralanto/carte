@@ -1,0 +1,90 @@
+/*-----DEFAULT-----*/
+ul{
+    list-style: none;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+i{
+    display: block;
+    font-weight: 100;
+}
+img{
+    display: block;
+    width: 100%;
+}
+
+
+
+
+.content {
+    display: flex;
+    width: 730px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 7px 0px #9f9f9f;
+    border-radius: 15px;
+}
+
+.block1{
+    width: 70%;
+    padding: 40px;
+}
+.block2{
+    width:  30%;
+    background: brown;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    align-items: center;
+}
+.nom{
+    font-weight: 700;
+    font-size: 18px;
+}
+.list{
+    padding: 10px 0px 0px 60px;
+    position: relative ;
+    height: 40px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.list::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 50% 50%;
+    border-radius:50% ;
+    background-color: brown;
+}
+
+.list:nth-child(1)::before{
+    background-image: url(icon/nom.png);
+}
+.list:nth-child(2)::before{
+    background-image: url(icon/phone.png);
+}
+.list:nth-child(3)::before{
+    background-image: url(icon/fb.png);
+}
+.list:nth-child(4)::before{
+    background-image: url(icon/mail.png);
+}
+.list:nth-child(5)::before{
+    background-image: url(icon/localisation.png);
+}
+
+.profil{
+    width: 200px;
+    height: auto;
+}
